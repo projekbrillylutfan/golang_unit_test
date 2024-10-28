@@ -132,6 +132,7 @@ func TestMain(m *testing.M) {
 }
 
 func TestSkip(t *testing.T) {
+	fmt.Println(runtime.GOOS)
 	if runtime.GOOS == "darwin" {
 		t.Skip("Can not run on Mac OS")
 	}
